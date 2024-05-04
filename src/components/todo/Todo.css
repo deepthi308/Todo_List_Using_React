@@ -1,0 +1,73 @@
+:root {
+  --BLUE-LIGHT: rgb(153, 192, 255);
+  --BLUE-DARK: rgb(0, 17, 45);
+  --WHITE: white;
+  --BLACK: black;
+}
+
+.list_item {
+  background-color: var(--BLUE-LIGHT);
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  width: 100%;
+  padding: 0.1rem;
+  border: 0.1rem solid var(--BLUE-DARK);
+  transition: all 0.3s ease-in-out;
+}
+
+/* .list_item:hover {
+  transform: scale(98%);
+  cursor: pointer;
+} */
+
+.todo {
+  padding: 1rem;
+  flex: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.btns {
+  flex: 0.4;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  justify-content: space-evenly;
+}
+
+.btns .edit {
+  flex: 50%;
+  height: 3.6rem;
+  /* border-radius: 50%; */
+  background-color: var(--BLUE-VERY-LIGHT);
+  border: 0.1rem solid var(--BLUE-DARK);
+  outline: none;
+  border-radius: 0.2rem;
+}
+
+.btns .delete {
+  flex: 50%;
+  height: 3.6rem;
+  /* border-radius: 50%; */
+  background-color: var(--BLUE-DARK);
+  color: var(--BLUE-LIGHT);
+  border: 0.1rem solid var(--BLUE-DARK);
+  outline: none;
+  border-radius: 0.2rem;
+}
+
+.btns .edit:hover,
+.btns .delete:hover {
+  background-color: var(--BLUE-LIGHT);
+  color: var(--BLUE-DARK);
+  box-shadow: inset 0px 0px 0.2rem var(--BLUE-DARK);
+}
+
+.btns .edit:active,
+.btns .delete:active {
+  transform: scale(96%);
+  cursor: pointer;
+}
